@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://bon-app.info/sitemap.xml
+Sitemap: https://bon-app.info/sitemap-2.xml
