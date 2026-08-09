@@ -149,6 +149,11 @@
   /* ---------- Révélation au défilement ---------- */
   .reveal{opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
   .reveal.vu{opacity:1;transform:translateY(0)}
+  /* Les cartes inclinées gardent leur rotation à travers l'animation */
+  .papier.reveal{transform:rotate(-2deg) translateY(16px)}
+  .papier.reveal.vu{transform:rotate(-2deg)}
+  .carte-app-mini.reveal{transform:rotate(1deg) translateY(16px)}
+  .carte-app-mini.reveal.vu{transform:rotate(1deg)}
   .carte:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(30,31,31,.10)}
   @media (prefers-reduced-motion: reduce){
     .reveal{opacity:1;transform:none;transition:none}
@@ -196,6 +201,37 @@
   .etape h3{font-size:1.05rem;margin-bottom:8px}
   .etape p{font-size:.92rem;color:var(--texte-doux)}
 
+  /* ---------- Recettes de famille ---------- */
+  .famille .encart{
+    background:var(--orange-pale);border-radius:28px;padding:56px 48px;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+  }
+  @media (max-width:860px){ .famille .encart{grid-template-columns:1fr;padding:40px 28px} }
+  .famille .kicker{font-weight:700;color:var(--orange-fonce);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+  .famille h2{font-size:clamp(1.6rem,3.5vw,2.3rem);font-weight:800;letter-spacing:-.02em;margin-top:10px}
+  .famille p{margin-top:16px;color:var(--texte-doux)}
+  .famille ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+  .famille li{display:flex;gap:12px;align-items:baseline}
+  .famille li .puce{font-size:1.1rem}
+  .numerisation{display:flex;flex-direction:column;gap:16px;align-items:center}
+  .papier{
+    background:#FFFDF5;color:#3A3324;border-radius:6px;padding:20px 20px 24px;
+    width:min(300px,100%);transform:rotate(-2deg);
+    box-shadow:0 8px 24px rgba(30,31,31,.14);
+    background-image:repeating-linear-gradient(transparent,transparent 27px,#E8DFC8 28px);
+    font-family:"Segoe Print","Bradley Hand","Comic Sans MS",cursive;line-height:28px;
+  }
+  .papier .titre-papier{font-weight:700;font-size:1.05rem}
+  .papier .liste-papier{font-size:.88rem}
+  .fleche-scan{font-size:1.3rem;color:var(--orange-fonce);font-weight:700}
+  .carte-app-mini{
+    background:var(--surface);border:1px solid var(--filet);border-radius:16px;
+    padding:16px 18px;width:min(300px,100%);box-shadow:var(--ombre);
+    display:flex;flex-direction:column;gap:6px;transform:rotate(1deg);font-size:.9rem;
+  }
+  .carte-app-mini .sous{color:var(--texte-doux);font-size:.82rem}
+  .carte-app-mini .badge-rabais{align-self:flex-start}
+
   /* ---------- Gusto ---------- */
   .gusto .conteneur{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
   @media (max-width:820px){ .gusto .conteneur{grid-template-columns:1fr} }
@@ -239,6 +275,7 @@
     <nav>
       <a href="#fonctionnalites">Fonctionnalités</a>
       <a href="#comment">Comment ça marche</a>
+      <a href="#tes-recettes">Tes recettes</a>
       <a href="#gusto">Gusto</a>
       <a class="btn btn-orange" href="https://github.com/BonApp-QC/bonapp-apk/releases/latest/download/BonApp-latest.apk">Télécharger l'app</a>
     </nav>
@@ -361,6 +398,43 @@
   </div>
 </section>
 
+<section id="tes-recettes" class="famille">
+  <div class="conteneur">
+    <div class="encart">
+      <div>
+        <div class="kicker">Tes recettes à toi</div>
+        <h2>Les recettes de ta grand-mère ont leur place ici</h2>
+        <p>
+          BonApp!, ce n'est pas que notre catalogue. Le cahier de famille, la
+          carte tachée de sauce, la tourtière que personne d'autre ne réussit
+          pareil — tout ça entre dans l'app en quelques secondes.
+        </p>
+        <ul>
+          <li><span class="puce">📸</span><span><strong>Prends-la en photo.</strong> Manuscrite, imprimée, croche sur la feuille : Gusto la déchiffre et la sauvegarde.</span></li>
+          <li><span class="puce">✍️</span><span><strong>Ou tape-la à la main</strong> — titre, ingrédients, étapes, photo si le cœur t'en dit.</span></li>
+          <li><span class="puce">🏷️</span><span><strong>Puis elle vit comme les autres :</strong> chiffrée aux vrais prix, planifiée dans ta semaine, sur ta liste d'épicerie.</span></li>
+        </ul>
+      </div>
+      <div class="numerisation" aria-hidden="true">
+        <div class="papier">
+          <div class="titre-papier">Tourtière de mamie Ginette</div>
+          <div class="liste-papier">
+            1 lb de porc haché · 1 oignon<br>
+            cannelle, clou de girofle<br>
+            « pis un peu d'amour »
+          </div>
+        </div>
+        <div class="fleche-scan">📸&nbsp;&nbsp;⟶</div>
+        <div class="carte-app-mini">
+          <strong>Tourtière de mamie Ginette</strong>
+          <span class="sous">6 portions · 11,45 $ aux prix de cette semaine</span>
+          <span class="badge-rabais">Numérisée ✓</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="gusto" class="gusto">
   <div class="conteneur">
     <div>
@@ -449,10 +523,10 @@
   maj();
 
   // --- Révélation au défilement --------------------------------------------
-  const cibles = document.querySelectorAll('.carte, .etape, .bulle');
+  const cibles = document.querySelectorAll('.carte, .etape, .bulle, .papier, .fleche-scan, .carte-app-mini');
   for (const el of cibles) el.classList.add('reveal');
   // Décalage en cascade à l'intérieur d'un même groupe
-  for (const parent of document.querySelectorAll('.grille, .chat')) {
+  for (const parent of document.querySelectorAll('.grille, .chat, .numerisation')) {
     const pas = parent.classList.contains('chat') ? 220 : 70;
     [...parent.children].forEach((el, i) => { el.style.transitionDelay = i * pas + 'ms'; });
   }
