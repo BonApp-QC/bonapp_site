@@ -27,9 +27,18 @@
     {
       "@type": "Organization",
       "name": "BonApp!",
+      "legalName": "BonApp! solutions numériques inc.",
       "url": "https://bon-app.info/",
       "logo": "https://bon-app.info/logo.png",
-      "email": "admin@bon-app.info"
+      "email": "admin@bon-app.info",
+      "telephone": "+1-418-255-9458",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "59, rue du Plateau",
+        "addressLocality": "Beaumont",
+        "addressRegion": "QC",
+        "addressCountry": "CA"
+      }
     },
     {
       "@type": "WebSite",
@@ -272,6 +281,15 @@
   .final p{color:var(--texte-doux);margin:14px auto 28px;max-width:32em}
   .final .note{margin-top:14px;font-size:.85rem;color:var(--hint)}
 
+  /* ---------- Nous joindre ---------- */
+  .joindre .carte{text-align:center}
+  .joindre .carte .icone{margin-left:auto;margin-right:auto}
+  .joindre .carte a{color:var(--orange-fonce);text-decoration:none;font-weight:600}
+  .joindre .carte a:hover{text-decoration:underline}
+  .joindre .legal{text-align:center;margin-top:32px;font-size:.9rem;color:var(--hint)}
+  .joindre .legal a{color:var(--texte-doux)}
+  .joindre .legal a:hover{color:var(--orange)}
+
   /* ---------- Pied ---------- */
   footer{border-top:1px solid var(--filet);padding:32px 0;font-size:.85rem;color:var(--hint)}
   footer .conteneur{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
@@ -499,10 +517,41 @@
   </div>
 </section>
 
+<section id="nous-joindre" class="joindre">
+  <div class="conteneur">
+    <h2 class="titre-section">Nous joindre</h2>
+    <p class="sous-section">Une question, un pépin, une idée? On répond.</p>
+    <div class="grille">
+      <div class="carte">
+        <div class="icone">📞</div>
+        <h3>Téléphone</h3>
+        <p><a href="tel:+14182559458">418 255-9458</a></p>
+      </div>
+      <div class="carte">
+        <div class="icone">✉️</div>
+        <h3>Courriel</h3>
+        <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a></p>
+      </div>
+      <div class="carte">
+        <div class="icone">📍</div>
+        <h3>Adresse</h3>
+        <p>59, rue du Plateau<br>Beaumont (Québec)</p>
+      </div>
+    </div>
+    <p class="legal">
+      BonApp! solutions numériques inc. ·
+      <a href="confidentialite.html">Politique de confidentialité</a>
+    </p>
+  </div>
+</section>
+
 <footer>
   <div class="conteneur">
-    <div>© 2026 BonApp! — Fait au Québec 🍁</div>
-    <div><a href="mailto:admin@bon-app.info">Nous joindre</a></div>
+    <div>© 2026 BonApp! solutions numériques inc. — Fait au Québec 🍁</div>
+    <div>
+      <a href="#nous-joindre">Nous joindre</a> ·
+      <a href="confidentialite.html">Confidentialité</a>
+    </div>
   </div>
 </footer>
 
