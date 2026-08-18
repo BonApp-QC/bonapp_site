@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conditions d'utilisation — BonApp!</title>
+<meta name="description" content="Conditions d'utilisation de BonApp! solutions numériques inc.">
+<link rel="canonical" href="https://bon-app.info/conditions.html">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="apple-touch-icon" href="/logo.png">
+<style>
+  :root{
+    --orange:#F05D2D; --orange-fonce:#C23A14; --orange-pale:#FFE7DC;
+    --fond:#FAF9F7; --surface:#FFFFFF;
+    --texte:#1E1F1F; --texte-doux:#4F4D4A; --hint:#8E8A82;
+    --filet:#E8E4DE; --filet-doux:#F2EEE9;
+    color-scheme:light;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--fond);color:var(--texte);line-height:1.7;
+  }
+  .conteneur{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+  .retour{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--texte-doux);font-size:.9rem;margin-bottom:32px}
+  .retour img{height:28px}
+  .retour:hover{color:var(--orange)}
+
+  h1{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:20px}
+  .refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:12px 32px;font-size:.88rem;
+        border-top:1px solid var(--filet);border-bottom:1px solid var(--filet);padding:20px 0;margin-bottom:36px}
+  .refs div{display:flex;flex-direction:column}
+  .refs .k{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--hint);font-weight:700}
+  .refs .v{font-weight:600;color:var(--texte)}
+
+  nav.toc{margin-bottom:44px}
+  nav.toc h2{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--hint);font-weight:700;margin-bottom:12px}
+  nav.toc ol{margin:0;padding:0;list-style:none;counter-reset:t;columns:2;column-gap:32px}
+  nav.toc li{counter-increment:t;margin:4px 0;break-inside:avoid;font-size:.92rem}
+  nav.toc li::before{content:counter(t) ". ";color:var(--orange);font-weight:700;font-variant-numeric:tabular-nums}
+  nav.toc a{color:var(--texte);text-decoration:none}
+  nav.toc a:hover{color:var(--orange-fonce);text-decoration:underline}
+
+  section{margin-bottom:40px;scroll-margin-top:20px}
+  h2.sec{font-size:1.15rem;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--filet);color:var(--texte)}
+  h3{font-size:1rem;font-weight:700;margin:26px 0 8px;color:var(--texte)}
+  p{margin-bottom:14px;color:var(--texte-doux);font-size:.95rem}
+  ul{margin:0 0 14px 1.3em}
+  li{margin-bottom:6px;color:var(--texte-doux);font-size:.95rem}
+  strong{color:var(--texte)}
+  a{color:var(--orange-fonce)}
+
+  .tablewrap{overflow-x:auto;margin-bottom:16px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--surface);border:1px solid var(--filet)}
+  th{text-align:left;font-weight:700;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--hint);
+     padding:10px 14px;border-bottom:1px solid var(--filet);background:var(--filet-doux);white-space:nowrap}
+  td{padding:10px 14px;border-bottom:1px solid var(--filet-doux);vertical-align:top;color:var(--texte-doux)}
+  tr:last-child td{border-bottom:0}
+  td:first-child{font-weight:600;color:var(--texte);min-width:8.5rem}
+
+  .entity{background:var(--surface);border:1px solid var(--filet);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .entity p{margin-bottom:2px;font-size:.92rem}
+  .entity p:last-child{margin-bottom:0}
+  .entity .n{font-weight:700;color:var(--texte)}
+
+  /* Encadré d'avertissement — réservé aux passages dont l'ignorance peut
+     blesser quelqu'un (allergies, salubrité). Ne pas en faire un ornement. */
+  .alerte{background:var(--surface);border:1px solid var(--orange);border-left-width:4px;border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .alerte p:last-child{margin-bottom:0}
+  .alerte strong{color:var(--orange-fonce)}
+
+  .pied-doc{margin-top:48px;border-top:1px solid var(--filet);padding-top:18px;font-size:.85rem;color:var(--hint)}
+  .pied-doc p{margin-bottom:3px;font-size:.85rem;color:var(--hint)}
+  .pied-doc .n{font-weight:700;color:var(--texte-doux)}
+  .pied-doc a{color:var(--hint)}
+
+  @media (max-width:560px){
+    nav.toc ol{columns:1}
+    h1{font-size:1.6rem}
+  }
+  @media print{
+    body{background:#fff}
+    .retour,nav.toc{display:none}
+    table,.entity,.alerte{background:#fff}
+    h2.sec{page-break-after:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="conteneur">
+
+  <a class="retour" href="/"><img src="/logo.png" alt=""> Retour à l'accueil</a>
+
+
+
+  <div>
+    <h1>Conditions d'utilisation</h1>
+    <div class="refs">
+      <div><span class="k">Prestataire</span><span class="v">BonApp! solutions numériques inc.</span></div>
+      <div><span class="k">Version</span><span class="v">1.0</span></div>
+      <div><span class="k">En vigueur le</span><span class="v">10 septembre 2026</span></div>
+      <div><span class="k">Champ d'application</span><span class="v">Application BonApp! et site bon-app.info</span></div>
+    </div>
+  </div>
+
+  <nav class="toc" aria-label="Sommaire">
+    <h2>Sommaire</h2>
+    <ol>
+      <li><a href="#s1">Identification et acceptation</a></li>
+      <li><a href="#s2">Admissibilité</a></li>
+      <li><a href="#s3">Compte et authentification</a></li>
+      <li><a href="#s4">Essai gratuit et abonnement</a></li>
+      <li><a href="#s5">Ce que le service ne garantit pas</a></li>
+      <li><a href="#s6">Votre contenu</a></li>
+      <li><a href="#s7">Notre contenu</a></li>
+      <li><a href="#s8">Usages interdits</a></li>
+      <li><a href="#s9">Disponibilité et évolution</a></li>
+      <li><a href="#s10">Suspension et résiliation</a></li>
+      <li><a href="#s11">Garanties et responsabilité</a></li>
+      <li><a href="#s12">Renseignements personnels</a></li>
+      <li><a href="#s13">Modifications des conditions</a></li>
+      <li><a href="#s14">Droit applicable et recours</a></li>
+      <li><a href="#s15">Dispositions finales</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <h2 class="sec">1. Identification et acceptation</h2>
+    <p>Les présentes conditions régissent l'utilisation de l'application mobile BonApp! et du site bon-app.info, exploités par&nbsp;:</p>
+    <div class="entity">
+      <p class="n">BonApp! solutions numériques inc.</p>
+      <p>59, rue du Plateau, Beaumont (Québec) G0R 1C0, Canada</p>
+      <p>Numéro d'entreprise du Québec (NEQ) : 1182427030</p>
+      <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a> · 418 255-9458</p>
+    </div>
+    <p>Dans le présent document, « l'entreprise » désigne BonApp! solutions numériques inc., « le service » désigne l'application et le site, et « vous » désigne la personne physique qui les utilise.</p>
+    <p>L'acceptation des présentes conditions est requise avant toute utilisation du service et avant toute collecte de renseignements. Elle est journalisée avec le numéro de version accepté. Utiliser le service, c'est y être lié.</p>
+    <p>Les présentes conditions se lisent avec la <a href="confidentialite.html">politique de confidentialité</a>, qui décrit les renseignements personnels recueillis et leur traitement.</p>
+  </section>
+
+  <section id="s2">
+    <h2 class="sec">2. Admissibilité</h2>
+    <p>Le service s'adresse aux personnes âgées de <strong>quatorze ans et plus</strong>. Une personne de moins de quatorze ans ne peut l'utiliser qu'avec le consentement du titulaire de l'autorité parentale ou du tuteur, lequel accepte alors les présentes conditions en son nom.</p>
+    <p>La souscription d'un abonnement payant suppose la capacité de contracter. Une personne mineure ne peut souscrire qu'avec l'autorisation du titulaire de l'autorité parentale ou du tuteur, qui demeure responsable des sommes engagées.</p>
+    <p>Un compte est personnel. Il ne se partage pas, ne se prête pas et ne se revend pas. Une même personne ne peut ouvrir plusieurs comptes dans le but de renouveler la période d'essai.</p>
+  </section>
+
+  <section id="s3">
+    <h2 class="sec">3. Compte et authentification</h2>
+    <p>L'ouverture d'un compte requiert une adresse courriel valide. L'authentification s'effectue au moyen d'un code à usage unique transmis à cette adresse&nbsp;: il n'y a <strong>aucun mot de passe</strong>.</p>
+    <p>Il en découle une conséquence à connaître : <strong>qui a accès à votre boîte de courriel a accès à votre compte.</strong> Il vous appartient de protéger cette boîte et de nous signaler sans délai, à <a href="mailto:admin@bon-app.info">admin@bon-app.info</a>, toute utilisation non autorisée que vous constatez.</p>
+    <p>Les renseignements que vous fournissez doivent être exacts et tenus à jour. Vous pouvez, depuis l'application, révoquer les sessions ouvertes sur l'ensemble de vos appareils, et supprimer votre compte, l'opération étant confirmée par un code transmis par courriel.</p>
+  </section>
+
+  <section id="s4">
+    <h2 class="sec">4. Essai gratuit et abonnement</h2>
+
+    <h3>4.1 Période d'essai</h3>
+    <p>Tout nouveau compte donne droit à une période d'essai gratuite de <strong>quatorze jours</strong>, sans engagement et sans moyen de paiement exigé au moment de l'inscription. Cette période est offerte <strong>une seule fois par personne</strong>.</p>
+
+    <h3>4.2 Abonnement</h3>
+    <p>Au terme de l'essai, l'utilisation complète du service requiert un abonnement, offert en formule <strong>mensuelle ou annuelle</strong>. Le prix en vigueur, les taxes applicables et la durée de chaque formule sont affichés dans l'application et dans le magasin d'applications <strong>avant toute souscription</strong> — ils ne sont pas reproduits ici pour ne pas risquer de contredire le prix réellement facturé.</p>
+    <p>L'abonnement se <strong>renouvelle automatiquement</strong> à la fin de chaque période, au prix alors en vigueur, jusqu'à sa résiliation. Toute hausse de prix vous est annoncée avant qu'elle ne prenne effet, et vous pouvez résilier d'ici là.</p>
+
+    <h3>4.3 Facturation, résiliation et remboursements</h3>
+    <p>L'abonnement est souscrit, facturé et encaissé par <strong>Apple</strong> (App Store) ou par <strong>Google</strong> (Google Play), selon la plateforme utilisée, et il est régi en outre par les conditions de ces sociétés. L'entreprise n'a accès à aucun numéro de carte de paiement ni à aucune coordonnée bancaire.</p>
+    <p>La résiliation s'effectue en tout temps dans les réglages d'abonnement de votre compte Apple ou Google. Elle prend effet à la fin de la période déjà payée&nbsp;: vous conservez l'accès jusque-là.</p>
+    <p><strong>Les demandes de remboursement relèvent du magasin d'applications</strong> auprès duquel l'achat a été fait, seul détenteur de la transaction. L'entreprise ne traite aucune demande de remboursement et ne peut ni l'accorder ni la refuser.</p>
+
+    <h3>4.4 Fin de l'essai ou de l'abonnement</h3>
+    <p>À l'expiration de l'essai ou de l'abonnement, le compte passe en <strong>lecture seule</strong>&nbsp;: vos recettes personnelles, vos menus, vos listes et votre garde-manger demeurent consultables, mais les fonctions cessent d'être disponibles.</p>
+    <p><strong>Rien n'est supprimé de ce fait.</strong> Vos données sont conservées jusqu'à ce que vous supprimiez votre compte, et l'abonnement peut être repris à tout moment, avec l'ensemble de votre contenu.</p>
+  </section>
+
+  <section id="s5">
+    <h2 class="sec">5. Ce que le service ne garantit pas</h2>
+    <p>BonApp! est un outil de planification de repas et de magasinage. Il propose, il calcule et il range&nbsp;; il ne vérifie rien à votre place. Les limites qui suivent sont celles dont l'ignorance peut avoir des conséquences réelles.</p>
+
+    <h3>5.1 Allergies et intolérances</h3>
+    <div class="alerte">
+      <p><strong>Ne vous fiez jamais à BonApp! pour une allergie alimentaire pouvant mettre la vie en danger.</strong></p>
+      <p>Le filtrage des recettes selon vos allergies et intolérances est une <strong>aide à la planification</strong>, rien de plus. Il repose sur des données de recettes et de produits qui peuvent être incomplètes, périmées ou erronées, et il ne tient compte ni des contaminations croisées, ni des changements de formulation d'un produit, ni de la composition réelle de ce que vous achetez.</p>
+      <p>Il vous appartient de <strong>lire l'étiquette de chaque produit</strong> et de vérifier chaque ingrédient avant de le consommer ou de le servir. En cas de doute, consultez un médecin, un allergologue ou un diététiste-nutritionniste.</p>
+      <p>Le service ne donne aucun conseil médical ou nutritionnel et ne remplace l'avis d'aucun professionnel de la santé.</p>
+    </div>
+
+    <h3>5.2 Salubrité et cuisson</h3>
+    <div class="alerte">
+      <p>Les recettes, les durées et les températures de cuisson proposées <strong>ne garantissent pas la salubrité des aliments</strong>. La cuisson, la conservation, la chaîne de froid et l'hygiène de préparation demeurent sous votre seule responsabilité. Référez-vous aux recommandations des autorités de santé publique.</p>
+    </div>
+
+    <h3>5.3 Prix, rabais et circulaires</h3>
+    <p>Les prix et les rabais affichés sont <strong>relevés automatiquement</strong> chez les détaillants et peuvent être périmés, incomplets ou erronés. Un produit peut être en rupture, réservé à certaines succursales, soumis à des conditions ou à une limite de quantité, ou vendu à un autre prix que celui relevé.</p>
+    <p><strong>Seul le prix affiché en magasin ou payé en caisse fait foi.</strong> Les montants, sous-totaux et économies calculés par le service sont des <strong>estimations</strong> et ne constituent ni une offre, ni un engagement, ni une garantie de prix de la part de l'entreprise. L'entreprise ne vend aucun produit alimentaire.</p>
+
+    <h3>5.4 Assistant Gusto</h3>
+    <p>Gusto est un assistant fondé sur l'<strong>intelligence artificielle</strong>. Ses réponses sont générées automatiquement et peuvent être incomplètes, périmées ou fausses, y compris lorsqu'elles paraissent sûres. Vérifiez-les avant de les suivre.</p>
+    <p>Gusto ne donne <strong>aucun conseil nutritionnel ni médical</strong> et ne remplace ni médecin, ni diététiste-nutritionniste, ni allergologue. Les mises en garde des sections 5.1 et 5.2 s'appliquent intégralement à ce qu'il propose.</p>
+    <p>L'accès à l'assistant, à la numérisation de recettes et à l'import de recettes est plafonné par des <strong>quotas quotidiens</strong> par utilisateur, destinés à garder le service disponible pour tous et à en contenir le coût. L'entreprise peut ajuster ces plafonds, et restreindre ou suspendre un usage manifestement abusif ou automatisé.</p>
+  </section>
+
+  <section id="s6">
+    <h2 class="sec">6. Votre contenu</h2>
+    <p><strong>Vous demeurez propriétaire</strong> de vos recettes personnelles, de vos menus, de vos listes d'épicerie, du contenu de votre garde-manger et de vos échanges avec l'assistant.</p>
+    <p>Vous accordez à l'entreprise une licence <strong>strictement technique</strong>, non exclusive et sans redevance, limitée à ce qui est nécessaire pour héberger, sauvegarder, afficher et synchroniser ce contenu entre vos appareils aux fins de vous fournir le service. Cette licence ne permet aucun autre usage&nbsp;: ni publication, ni exploitation commerciale, ni ajout au catalogue public. <strong>Elle prend fin lorsque vous supprimez le contenu ou votre compte.</strong></p>
+    <p>Lorsque vous choisissez de partager une liste d'épicerie, vous créez vous-même une adresse web consultable sans compte, valide quatorze jours et révocable en tout temps. Vous décidez à qui la transmettre&nbsp;; quiconque détient le lien peut consulter la liste et cocher ses articles.</p>
+    <p>Vous êtes responsable du contenu que vous saisissez ou téléversez, et vous déclarez détenir les droits nécessaires sur les textes et les photographies que vous soumettez.</p>
+  </section>
+
+  <section id="s7">
+    <h2 class="sec">7. Notre contenu</h2>
+    <p>Le catalogue de recettes, les textes, l'interface, les visuels, la marque BonApp! et les composants logiciels du service sont la propriété de l'entreprise et sont protégés par les lois sur la propriété intellectuelle.</p>
+    <p>L'entreprise vous concède un droit d'utilisation <strong>personnel, non exclusif, non transférable et non commercial</strong>, pour la durée de votre accès au service. Ce droit couvre l'usage domestique normal&nbsp;: consulter, planifier, cuisiner et imprimer pour votre propre usage.</p>
+    <p>Il ne couvre ni la reproduction en lot, ni la republication, ni la revente, ni l'intégration du catalogue dans un autre produit ou service, ni son utilisation pour entraîner un système d'intelligence artificielle.</p>
+  </section>
+
+  <section id="s8">
+    <h2 class="sec">8. Usages interdits</h2>
+    <p>Il est interdit d'utiliser le service pour&nbsp;:</p>
+
+    <h3>8.1 Extraire ou revendre les données</h3>
+    <ul>
+      <li>extraire, copier ou aspirer le catalogue de recettes ou les données de prix, en tout ou en partie substantielle, par quelque moyen que ce soit;</li>
+      <li>revendre, republier ou rediffuser ces données, ou les intégrer à un autre produit ou service;</li>
+      <li>revendre, louer ou partager l'accès au service ou à un compte.</li>
+    </ul>
+
+    <h3>8.2 Contourner les mesures techniques</h3>
+    <ul>
+      <li>contourner ou tenter de contourner l'authentification, les quotas quotidiens ou les limites de débit;</li>
+      <li>automatiser les appels à l'application ou à l'interface de programmation, ou en faire un usage susceptible d'en dégrader le fonctionnement pour autrui;</li>
+      <li>décompiler, désassembler ou soumettre le service à une ingénierie inverse, sauf dans la mesure permise par la loi;</li>
+      <li>sonder, analyser ou tester la sécurité du service sans autorisation écrite préalable.</li>
+    </ul>
+
+    <h3>8.3 Soumettre du contenu illicite ou nuisible</h3>
+    <ul>
+      <li>saisir ou téléverser du contenu illégal, haineux, harcelant, diffamatoire ou attentatoire à la vie privée d'autrui;</li>
+      <li>soumettre des textes ou des photographies sur lesquels vous ne détenez pas les droits nécessaires;</li>
+      <li>téléverser du code malveillant ou du contenu conçu pour nuire au service ou à ses utilisateurs.</li>
+    </ul>
+
+    <h3>8.4 Détourner l'assistant</h3>
+    <ul>
+      <li>utiliser Gusto à des fins étrangères à la cuisine, à la planification de repas et à l'épicerie;</li>
+      <li>tenter d'en extraire les instructions internes, de contourner ses garde-fous ou de l'amener à produire du contenu contraire aux présentes conditions;</li>
+      <li>l'exploiter comme un service d'intelligence artificielle à usage général, pour votre compte ou pour celui d'un tiers.</li>
+    </ul>
+  </section>
+
+  <section id="s9">
+    <h2 class="sec">9. Disponibilité et évolution du service</h2>
+    <p>Le service est fourni <strong>tel quel</strong> et évolue. L'entreprise peut le modifier, ajouter ou retirer des fonctions, ajuster les quotas, et interrompre l'accès pour maintenance ou pour des raisons techniques ou de sécurité.</p>
+    <p>Aucun taux de disponibilité n'est garanti. Le service dépend de fournisseurs tiers — hébergement, courriel, intelligence artificielle, magasins d'applications — dont les défaillances peuvent l'affecter.</p>
+    <p>Le retrait d'une fonction importante ou la cessation du service vous est annoncé par un avis dans l'application, dans un délai raisonnable permettant d'exporter votre contenu.</p>
+  </section>
+
+  <section id="s10">
+    <h2 class="sec">10. Suspension et résiliation</h2>
+
+    <h3>10.1 Par vous</h3>
+    <p>Vous pouvez cesser d'utiliser le service en tout temps, résilier votre abonnement auprès du magasin d'applications (section 4.3) et supprimer votre compte depuis l'application.</p>
+
+    <h3>10.2 Par l'entreprise</h3>
+    <p>L'entreprise peut suspendre ou fermer un compte en cas de <strong>manquement grave</strong> aux présentes conditions, notamment aux usages interdits de la section 8. Elle vous en avise et vous accorde un délai raisonnable pour corriger la situation lorsque celle-ci peut l'être.</p>
+    <p>La suspension peut être <strong>immédiate et sans préavis</strong> lorsque le manquement l'exige&nbsp;: fraude, atteinte à la sécurité du service ou de ses utilisateurs, contenu illégal, ou usage automatisé compromettant la disponibilité du service. L'avis est alors donné dès que possible.</p>
+    <p>Si l'entreprise ferme un compte en l'absence de tout manquement de votre part, ou si elle cesse d'exploiter le service, elle vous en avise et appuie, à votre demande, la démarche de remboursement que vous adressez au magasin d'applications, seul détenteur de la transaction (section 4.3).</p>
+
+    <h3>10.3 Effets</h3>
+    <p>La fermeture du compte entraîne la suppression de votre contenu selon les durées prévues à la politique de confidentialité. Les sections 6 (pour ce qui est de votre propriété), 7, 11, 14 et 15 survivent à la fin du contrat.</p>
+  </section>
+
+  <section id="s11">
+    <h2 class="sec">11. Garanties et limitation de responsabilité</h2>
+    <p>Sous réserve des garanties légales que la loi rend obligatoires, le service est fourni sans garantie que son fonctionnement sera ininterrompu ou exempt d'erreur, ni que les recettes, les prix, les quantités ou les suggestions qu'il présente sont exacts, complets ou adaptés à votre situation.</p>
+    <p>L'entreprise n'est pas responsable des décisions d'achat, de préparation ou de consommation que vous prenez, ni des sommes dépensées en épicerie, ni des actes ou omissions des détaillants, des magasins d'applications et des autres fournisseurs tiers.</p>
+    <p>Dans la mesure permise par la loi, la responsabilité totale de l'entreprise, quel qu'en soit le fondement, est limitée au montant que vous lui avez effectivement versé au titre du service au cours des <strong>douze mois</strong> précédant le fait générateur, et exclut les dommages indirects et la perte de profits.</p>
+    <div class="alerte">
+      <p><strong>Ce que cette clause n'écarte pas.</strong> Rien dans les présentes conditions n'a pour effet d'exclure ou de limiter la responsabilité de l'entreprise dans la mesure où la loi l'interdit, notamment l'article 10 de la <em>Loi sur la protection du consommateur</em> et les dispositions impératives du <em>Code civil du Québec</em>. En particulier, la responsabilité pour un préjudice corporel ou moral, pour une faute lourde ou intentionnelle, et les garanties légales de qualité et de durabilité demeurent entières.</p>
+    </div>
+  </section>
+
+  <section id="s12">
+    <h2 class="sec">12. Renseignements personnels</h2>
+    <p>Le traitement de vos renseignements personnels est décrit dans la <a href="confidentialite.html">politique de confidentialité</a>, qui fait partie intégrante de votre relation avec l'entreprise. Vous y trouverez les renseignements recueillis, les finalités poursuivies, les durées de conservation, les communications à des tiers et les droits que vous pouvez exercer.</p>
+  </section>
+
+  <section id="s13">
+    <h2 class="sec">13. Modifications des conditions</h2>
+    <p>L'entreprise peut modifier les présentes conditions. Le numéro de version et la date d'entrée en vigueur figurent en tête du document.</p>
+    <p>Toute modification substantielle fait l'objet d'un <strong>avis dans l'application avant sa prise d'effet</strong> et d'une <strong>nouvelle acceptation</strong>, journalisée avec le numéro de version. Refuser la nouvelle version met fin au contrat pour l'avenir&nbsp;: vous conservez l'accès en lecture seule à votre contenu et pouvez supprimer votre compte.</p>
+  </section>
+
+  <section id="s14">
+    <h2 class="sec">14. Droit applicable et recours</h2>
+    <p>Les présentes conditions sont régies par les lois applicables au Québec et par les lois du Canada qui y sont applicables, sans égard aux règles de conflit de lois.</p>
+    <p>Tout différend relève des tribunaux du Québec. Lorsque vous agissez comme consommateur, l'action peut être portée devant le tribunal de votre domicile, conformément à la <em>Loi sur la protection du consommateur</em>&nbsp;: aucune clause des présentes ne vous prive de ce droit ni ne vous impose l'arbitrage.</p>
+    <p>Avant toute procédure, écrivez-nous à <a href="mailto:admin@bon-app.info">admin@bon-app.info</a>&nbsp;: la plupart des différends se règlent ainsi.</p>
+  </section>
+
+  <section id="s15">
+    <h2 class="sec">15. Dispositions finales</h2>
+    <p><strong>Langue.</strong> Les présentes conditions sont rédigées en français. Toute traduction n'est fournie qu'à titre indicatif&nbsp;; <strong>seule la version française fait foi</strong>.</p>
+    <p><strong>Cession.</strong> Vous ne pouvez céder vos droits au titre des présentes. L'entreprise peut céder les siens dans le cadre d'une réorganisation, d'une fusion ou de la vente de son entreprise, à la condition que le cessionnaire soit tenu aux mêmes obligations, notamment en matière de protection des renseignements personnels. Vous en êtes avisé.</p>
+    <p><strong>Divisibilité.</strong> Si une disposition est jugée invalide ou inopposable, elle est réduite à ce qui est permis ou écartée, et les autres dispositions demeurent en vigueur.</p>
+    <p><strong>Absence de renonciation.</strong> Le fait de ne pas se prévaloir d'une disposition ne vaut pas renonciation à s'en prévaloir plus tard.</p>
+    <p><strong>Intégralité.</strong> Les présentes conditions et la politique de confidentialité constituent l'entente entre vous et l'entreprise quant au service.</p>
+    <div class="entity">
+      <p class="n">BonApp! solutions numériques inc.</p>
+      <p>59, rue du Plateau, Beaumont (Québec) G0R 1C0</p>
+      <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a> · 418 255-9458</p>
+    </div>
+  </section>
+
+  <div class="pied-doc">
+    <p class="n">BonApp! solutions numériques inc.</p>
+    <p>59, rue du Plateau, Beaumont (Québec) G0R 1C0, Canada &middot; NEQ 1182427030</p>
+    <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a> &middot; 418 255-9458</p>
+    <p>Conditions d'utilisation, version 1.0 &mdash; 10 septembre 2026</p>
+    <p><a href="confidentialite.html">Politique de confidentialité</a></p>
+  </div>
+
+</div>
+</body>
+</html>
