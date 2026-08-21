@@ -1,9 +1,14 @@
 # Site vitrine BonApp!
 
-Le site public de [bon-app.info](https://bon-app.info) — une seule page
-statique, autonome (logo en data URI, aucune dépendance externe).
+Le site public de [bon-app.info](https://bon-app.info) — pages statiques
+autonomes, sans dépendance externe (styles inclus dans chaque fichier).
 
-- **`index.html`** — tout le site : contenu, styles, interactions.
+- **`index.html`** — page vitrine : contenu, styles, interactions.
+- **`confidentialite.html`** — politique de confidentialité.
+- **`conditions.html`** — conditions d'utilisation.
+- **`suppression-compte.html`** — suppression du compte et des données.
+  URL exigée par les magasins d'applications (Google Play, App Store) au
+  titre de la suppression de compte : ne pas la renommer ni la retirer.
 - **`CNAME`** — domaine personnalisé GitHub Pages.
 
 ## Déploiement

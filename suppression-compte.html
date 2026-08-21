@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Supprimer votre compte — BonApp!</title>
+<meta name="description" content="Comment supprimer votre compte BonApp! et les données associées : depuis l'application, ou par demande écrite si vous n'y avez plus accès.">
+<link rel="canonical" href="https://bon-app.info/suppression-compte.html">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="apple-touch-icon" href="/logo.png">
+<style>
+  :root{
+    --orange:#F05D2D; --orange-fonce:#C23A14; --orange-pale:#FFE7DC;
+    --fond:#FAF9F7; --surface:#FFFFFF;
+    --texte:#1E1F1F; --texte-doux:#4F4D4A; --hint:#8E8A82;
+    --filet:#E8E4DE; --filet-doux:#F2EEE9;
+    color-scheme:light;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--fond);color:var(--texte);line-height:1.7;
+  }
+  .conteneur{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+  .retour{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--texte-doux);font-size:.9rem;margin-bottom:32px}
+  .retour img{height:28px}
+  .retour:hover{color:var(--orange)}
+
+  h1{font-size:2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:20px}
+  .refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:12px 32px;font-size:.88rem;
+        border-top:1px solid var(--filet);border-bottom:1px solid var(--filet);padding:20px 0;margin-bottom:36px}
+  .refs div{display:flex;flex-direction:column}
+  .refs .k{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--hint);font-weight:700}
+  .refs .v{font-weight:600;color:var(--texte)}
+
+  section{margin-bottom:40px;scroll-margin-top:20px}
+  h2.sec{font-size:1.15rem;font-weight:700;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--filet);color:var(--texte)}
+  h3{font-size:1rem;font-weight:700;margin:26px 0 8px;color:var(--texte)}
+  p{margin-bottom:14px;color:var(--texte-doux);font-size:.95rem}
+  ul,ol{margin:0 0 14px 1.3em}
+  li{margin-bottom:6px;color:var(--texte-doux);font-size:.95rem}
+  ol li::marker{color:var(--orange);font-weight:700}
+  strong{color:var(--texte)}
+  a{color:var(--orange-fonce)}
+
+  .btn-courriel{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;
+    padding:13px 22px;border-radius:999px;font-size:.95rem;margin:2px 0 16px}
+  .btn-courriel:hover{background:var(--orange-fonce)}
+
+  .tablewrap{overflow-x:auto;margin-bottom:16px;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;background:var(--surface);border:1px solid var(--filet)}
+  th{text-align:left;font-weight:700;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--hint);
+     padding:10px 14px;border-bottom:1px solid var(--filet);background:var(--filet-doux);white-space:nowrap}
+  td{padding:10px 14px;border-bottom:1px solid var(--filet-doux);vertical-align:top;color:var(--texte-doux)}
+  tr:last-child td{border-bottom:0}
+  td:first-child{font-weight:600;color:var(--texte);min-width:8.5rem}
+
+  .entity{background:var(--surface);border:1px solid var(--filet);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .entity p{margin-bottom:2px;font-size:.92rem}
+  .entity p:last-child{margin-bottom:0}
+  .entity .n{font-weight:700;color:var(--texte)}
+
+  /* Encadré d'avertissement — réservé ici au caractère irréversible de
+     l'opération. Ne pas en faire un ornement. */
+  .alerte{background:var(--surface);border:1px solid var(--orange);border-left-width:4px;border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .alerte p:last-child{margin-bottom:0}
+  .alerte strong{color:var(--orange-fonce)}
+
+  .pied-doc{margin-top:48px;border-top:1px solid var(--filet);padding-top:18px;font-size:.85rem;color:var(--hint)}
+  .pied-doc p{margin-bottom:3px;font-size:.85rem;color:var(--hint)}
+  .pied-doc .n{font-weight:700;color:var(--texte-doux)}
+  .pied-doc a{color:var(--hint)}
+
+  @media (max-width:560px){ h1{font-size:1.6rem} }
+  @media print{
+    body{background:#fff}
+    .retour{display:none}
+    table,.entity,.alerte{background:#fff}
+    h2.sec{page-break-after:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="conteneur">
+
+  <a class="retour" href="/"><img src="/logo.png" alt=""> Retour à l'accueil</a>
+
+  <div>
+    <h1>Supprimer votre compte</h1>
+    <div class="refs">
+      <div><span class="k">Application</span><span class="v">BonApp! (Android)</span></div>
+      <div><span class="k">Éditeur</span><span class="v">BonApp! solutions numériques inc.</span></div>
+      <div><span class="k">Effet</span><span class="v">Suppression définitive du compte et des données</span></div>
+      <div><span class="k">Délai</span><span class="v">Immédiat dans l'application; trente jours au plus par courriel</span></div>
+    </div>
+  </div>
+
+  <p>Vous pouvez supprimer votre compte BonApp! et les renseignements personnels qui s'y rattachent en tout temps, sans frais et sans avoir à motiver votre demande. Deux façons de faire : directement dans l'application, ou par demande écrite si vous n'y avez plus accès.</p>
+
+  <div class="alerte">
+    <p><strong>L'opération est irréversible.</strong> Une fois la suppression confirmée, ni le profil, ni les menus, ni les listes d'épicerie, ni les recettes personnelles ne peuvent être récupérés. Conservez d'abord ce que vous souhaitez garder.</p>
+  </div>
+
+  <section id="application">
+    <h2 class="sec">1. Depuis l'application — immédiat</h2>
+    <p>C'est la méthode la plus rapide : la suppression est exécutée sur-le-champ.</p>
+    <ol>
+      <li>Ouvrez BonApp! et rendez-vous à l'onglet <strong>Profil</strong>.</li>
+      <li>Faites défiler jusqu'à la section <strong>Compte</strong>.</li>
+      <li>Touchez <strong>Supprimer mon compte</strong>.</li>
+      <li>Saisissez le <strong>code de confirmation</strong> transmis à l'adresse courriel du compte — il confirme votre identité et n'est valide que dix minutes.</li>
+      <li>Confirmez. Le compte et les données associées sont supprimés immédiatement, et l'ensemble de vos appareils est déconnecté.</li>
+    </ol>
+  </section>
+
+  <section id="courriel">
+    <h2 class="sec">2. Par courriel — si vous n'avez plus l'application</h2>
+    <p>Si l'application a été désinstallée ou si vous ne parvenez plus à vous connecter, écrivez-nous <strong>depuis l'adresse courriel associée au compte</strong>.</p>
+    <p><a class="btn-courriel" href="mailto:admin@bon-app.info?subject=Demande%20de%20suppression%20de%20compte%20BonApp!&amp;body=Bonjour%2C%0A%0AJe%20demande%20la%20suppression%20de%20mon%20compte%20BonApp!%20et%20de%20toutes%20les%20donn%C3%A9es%20qui%20y%20sont%20rattach%C3%A9es.%0A%0AAdresse%20courriel%20du%20compte%20%3A%20%0A%0AMerci.">Demander la suppression par courriel</a></p>
+    <p>Précisez l'adresse courriel du compte à supprimer. Si la demande provient d'une autre adresse, un code de vérification est d'abord envoyé à l'adresse du compte : cette précaution empêche qu'un tiers fasse supprimer votre compte.</p>
+    <p>La demande est traitée dans un <strong>délai maximal de trente jours</strong> suivant sa réception, conformément à la <a href="confidentialite.html#s11">politique de confidentialité</a>. Un courriel confirme la suppression une fois celle-ci effectuée. Pour toute assistance, joignez-nous au <a href="tel:+14182559458">418 255-9458</a>.</p>
+  </section>
+
+  <section id="donnees">
+    <h2 class="sec">3. Données supprimées</h2>
+    <p>La suppression du compte entraîne celle de l'ensemble des renseignements suivants :</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Donnée</th><th>Sort</th></tr></thead>
+        <tbody>
+          <tr><td>Profil et adresse courriel</td><td>Supprimés définitivement</td></tr>
+          <tr><td>Allergies, régimes, budget et préférences</td><td>Supprimés définitivement</td></tr>
+          <tr><td>Sessions et jetons d'authentification</td><td>Supprimés définitivement; tous les appareils sont déconnectés</td></tr>
+          <tr><td>Menus, listes d'épicerie et garde-manger</td><td>Supprimés définitivement</td></tr>
+          <tr><td>Favoris et recettes personnelles</td><td>Supprimés définitivement</td></tr>
+          <tr><td>Historique de conversation avec Gusto</td><td>Supprimé définitivement</td></tr>
+          <tr><td>Liens de partage émis</td><td>Révoqués et supprimés</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="conservation">
+    <h2 class="sec">4. Ce qui subsiste</h2>
+    <p>Deux éléments échappent à la suppression immédiate, pour des raisons techniques et légales :</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Élément</th><th>Durée</th></tr></thead>
+        <tbody>
+          <tr><td>Copies de sauvegarde chiffrées de la base de données</td><td>Quatre-vingt-dix jours au plus, puis destruction; elles ne sont restaurées qu'en cas d'incident majeur</td></tr>
+          <tr><td>Registre de consentement</td><td>Conservé après la suppression du compte, pour la durée prescrite par la loi</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Les recettes du catalogue public, les prix d'épicerie et les données statistiques ne se rattachent à aucun compte et ne sont pas visés par la suppression.</p>
+  </section>
+
+  <section id="autres-droits">
+    <h2 class="sec">5. Solutions autres que la suppression</h2>
+    <p>Supprimer le compte n'est pas toujours nécessaire. Depuis l'application, vous pouvez également :</p>
+    <ul>
+      <li>retirer votre consentement à la collecte des allergies, des régimes ou du budget, et vous désabonner des communications;</li>
+      <li>supprimer un article, une liste, une recette ou une entrée de menu, un à la fois;</li>
+      <li>révoquer un lien de partage et déconnecter l'ensemble des appareils;</li>
+      <li>demander l'accès à vos renseignements, leur rectification ou leur portabilité, en écrivant à <a href="mailto:admin@bon-app.info">admin@bon-app.info</a>.</li>
+    </ul>
+    <p>L'ensemble de ces droits est détaillé à la section 11 de la <a href="confidentialite.html#s11">politique de confidentialité</a>.</p>
+  </section>
+
+  <section id="coordonnees">
+    <h2 class="sec">6. Coordonnées</h2>
+    <div class="entity">
+      <p class="n">BonApp! solutions numériques inc.</p>
+      <p>À l'attention du responsable de la protection des renseignements personnels</p>
+      <p>59, rue du Plateau, Beaumont (Québec) G0R 1C0</p>
+      <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a> · 418 255-9458</p>
+    </div>
+    <p>La personne insatisfaite du traitement de sa demande peut porter plainte auprès de la Commission d'accès à l'information du Québec, à l'adresse <a href="https://www.cai.gouv.qc.ca">cai.gouv.qc.ca</a>.</p>
+  </section>
+
+  <div class="pied-doc">
+    <p class="n">BonApp! solutions numériques inc.</p>
+    <p>59, rue du Plateau, Beaumont (Québec) G0R 1C0, Canada &middot; NEQ 1182427030</p>
+    <p><a href="mailto:admin@bon-app.info">admin@bon-app.info</a> &middot; 418 255-9458</p>
+    <p><a href="confidentialite.html">Politique de confidentialité</a> &middot; <a href="conditions.html">Conditions d'utilisation</a></p>
+  </div>
+
+</div>
+</body>
+</html>
